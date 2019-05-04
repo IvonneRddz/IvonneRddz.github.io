@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'hopetsMyPerfil';
+  src:  url('fonts/hopetsMyPerfil.eot?c9jgxx');
+  src:  url('fonts/hopetsMyPerfil.eot?c9jgxx#iefix') format('embedded-opentype'),
+    url('fonts/hopetsMyPerfil.ttf?c9jgxx') format('truetype'),
+    url('fonts/hopetsMyPerfil.woff?c9jgxx') format('woff'),
+    url('fonts/hopetsMyPerfil.svg?c9jgxx#hopetsMyPerfil') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="hp-"], [class*=" hp-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hopetsMyPerfil' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hp-linkedin:before {
+  content: "\e902";
+  color: #0077b5;
+}
+.hp-git:before {
+  content: "\e900";
+}
+.hp-email:before {
+  content: "\e901";
+}
+.hp-location:before {
+  content: "\e904";
+}
+.hp-facebook:before {
+  content: "\ea91";
+}

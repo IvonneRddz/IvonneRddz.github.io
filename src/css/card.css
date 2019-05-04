@@ -1,0 +1,27 @@
+.ir_Card{
+  background-color: white;
+  padding: 24px;
+}
+
+.ir_Card-overview-general{
+  margin-bottom: 24px;
+}
+
+.ir_Card-overview-general-name{
+  font-size: 24px;
+  display: block;
+}
+
+
+.ir_Card-overview-general-job{
+font-size: 24px;
+display: block;
+}
+
+.ir_Card-overview-contact-location span{
+  font-size: 12px;
+}
+
+.ir_Card-overview-contact-location{
+  display: inline-block;
+}
