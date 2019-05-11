@@ -1,7 +1,15 @@
 .ir_Card{
-  background-color: white;
+  background-color: aliceblue;
   padding: 24px;
+  position: relative; /*para poder poner la imag, son los limites de donde se pondra poner la imagen de portada*/
+  /*overflow: hidden; /*es para poner scrollbar*/
+  padding: 248px 24px 24px; 
 }
+
+.ir_Card-overview{
+margin-bottom: 8px;
+}
+
 
 .ir_Card-overview-general{
   margin-bottom: 24px;
@@ -10,6 +18,7 @@
 .ir_Card-overview-general-name{
   font-size: 24px;
   display: block;
+  margin-bottom: 5px; 
 }
 
 
@@ -18,6 +27,10 @@ font-size: 24px;
 display: block;
 }
 
+.ir_Card-overview-general a{
+  color: rgb(78, 243, 216);
+  }
+
 .ir_Card-overview-contact-location span{
   font-size: 12px;
 }
@@ -25,3 +38,18 @@ display: block;
 .ir_Card-overview-contact-location{
   display: inline-block;
 }
+
+.ir_Card::before{
+content: '';
+background-color: rgba(0,0,0,1);
+  background-image: url('../images/logo2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute; /*para poner la foto en una posicion absoluta dentro del area relativa*/
+  top: 0; /*posicion inicial de la img*/
+  left: 0;
+  right: 0;
+  height: 320px; /* es donde ajustamos el tamaño de la img*/
+}
+
