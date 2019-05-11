@@ -1,42 +1,8 @@
 .ir_Card{
   background-color: aliceblue;
-  padding: 24px;
   position: relative; /*para poder poner la imag, son los limites de donde se pondra poner la imagen de portada*/
   /*overflow: hidden; /*es para poner scrollbar*/
-  padding: 324px 24px 24px; 
-}
-
-.ir_Card-overview{
-margin-bottom: 8px;
-}
-
-
-.ir_Card-overview-general{
-  margin-bottom: 24px;
-}
-
-.ir_Card-overview-general-name{
-  font-size: 24px;
-  display: block;
-  margin-bottom: 5px; 
-}
-
-
-.ir_Card-overview-general-job{
-font-size: 24px;
-display: block;
-}
-
-.ir_Card-overview-general a{
-  color: rgb(78, 243, 216);
-  }
-
-.ir_Card-overview-contact-location span{
-  font-size: 12px;
-}
-
-.ir_Card-overview-contact-location{
-  display: inline-block;
+  padding: 20em 1.5em 1.5em; /*324px 24px 24px; o sea 16px - 1em*/
 }
 
 .ir_Card::before{ /*es un pseudo elemento para la imagen*/
@@ -50,8 +16,41 @@ display: block;
   top: 0; /*posicion inicial de la img*/
   left: 0;
   right: 0;
-  height: 300px; /* es donde ajustamos el tamaño de la img*/
+  height: 19em; /* 300px, es donde ajustamos el tamaño de la img*/
 }
+
+.ir_Card-overview{
+margin-bottom: 0.5em; /*8px*/
+}
+
+.ir_Card-overview-general{
+  margin-bottom: 1.5em; /*24px*/
+}
+
+.ir_Card-overview-general-name{
+  font-size: 1.5rem; /*24px -> 1*/
+  display: block;
+  margin-bottom: 0.333em; /*8px *1 / 24*/
+}
+
+
+.ir_Card-overview-general-job{
+font-size: 1.5rem; /*24px*/
+display: block;
+}
+
+.ir_Card-overview-general a{
+  color: rgb(78, 243, 216);
+  }
+
+.ir_Card-overview-contact-location span{
+  font-size: 0.75rem; /*12px*/
+}
+
+.ir_Card-overview-contact-location{
+  display: inline-block;
+}
+
 
 @media screen and (min-width: 576px){   /*To mobile device*/
   body{ /*para poner todo en el centro*/
@@ -63,7 +62,7 @@ display: block;
 
   .ir_Card{
     width: 80%; /*varia el tamaño del card*/
-    box-shadow: -3px 3px 10px 12px rgba(255,255,255,1);
+    box-shadow: -0.1875em 0.1875‬em 0.625‬em 0.75em rgba(255,255,255,1); /*-3px 3px 10px 12px rgba(255,255,255,1);*/
   }
 
   .ir_Card-overview-contact{
@@ -75,14 +74,14 @@ display: block;
 
 @media screen and (min-width: 768px){ /*To tablet device*/
 .ir_Card{
-  padding-top: 24px;
-  padding-left: 344px;
+  padding-top: 1.5em;/*24px;*/
+  padding-left: 21.5em; /*344px;*/
   box-shadow: none;
 }
 
 .ir_Card::before{
   height: 100%;
-  width: 320px;
+  width: 20em;/*320px;*/
   background-image: url('../images/logo1.png');
 }
 
@@ -90,14 +89,14 @@ display: block;
 
 @media screen and (min-width: 992px){ /*To desktop */
 .ir_Card{
-max-width: 800px;
-padding-left: 368px;
+max-width: 50em; /*800px;*/
+padding-left: 23em; /*368px;*/
 }
 
 .ir_Card::before{
-left: 24px;
-top: -24px;
-bottom: -24px;
+left: 1.5em; /*24px;*/
+top: -1.5em;/*-24px;*/
+bottom: -1.5em; /*-24px;*/
 height: auto;
 }
 

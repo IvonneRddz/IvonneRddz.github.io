@@ -6,7 +6,7 @@ body {
   background-color: rgb(95, 0, 71);
   color: #707573;
   font-family: 'Poppins', sans-serif;
-  line-height: normal;
+  font-size: 1rem ; /*16px es el valor por default, cm base*/
   line-height: normal;
   }
   
