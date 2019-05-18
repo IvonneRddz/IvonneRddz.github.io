@@ -1,7 +1,12 @@
+*{
+  box-sizing: border-box; /*todos los anchos y altos que definan seran apartir del borde*/
+}
+
 body { 
+  background-color: rgb(95, 0, 71);
   color: #707573;
   font-family: 'Poppins', sans-serif;
-  line-height: normal;
+  font-size: 1rem ; /*16px es el valor por default, cm base*/
   line-height: normal;
   }
   
@@ -23,5 +28,15 @@ body {
   strong{
     font-weight: bold; 
   }
+
+  /* Extra small <576px (default size) to mobile*/
+  /*Es un media query para que nuestra app se adapte a la resolucion de la pantalla*/
+
+  @media screen and (min-width: 576px){
+    body{
+    background-color: rgb(23, 235, 182);
+    }
+  }
+  
  
   

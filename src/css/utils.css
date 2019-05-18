@@ -1,5 +1,3 @@
-
-
 .ir_u-onRead{ 
   position: absolute !important;
   overflow: hidden !important;
@@ -15,7 +13,7 @@
 }
 
 .hp_Footer-copy {
-  font-size: 15px;
+  font-size: 1em; /*15px*/
 }
 
 .hp_Footer-socialNetwork {
@@ -23,7 +21,7 @@
 }
 
 .hp_Footer-socialNetwork-item{
-margin: 0 4px;
+margin: 0 0.25em; /*4px*/
 transition: color 0.5s ease;
 }
 
